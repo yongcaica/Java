@@ -1,0 +1,20 @@
+B[4] is same as the original value of A[4].
+
+
+1、clone 方法
+
+clone方法是从Object类继承过来的，基本数据类型（String ，boolean，char，byte，short，float ，double，long）都可以直接使用clone方法进行克隆，注意String类型是因为其值不可变所以才可以使用。
+
+int 类型示例
+
+        int[] a1 = {1, 3};
+        int[] a2 = a1.clone();
+
+        a1[0] = 666;
+        System.out.println(Arrays.toString(a1));   //[666, 3]
+        System.out.println(Arrays.toString(a2));   //[1, 3]
+---------------------
+作者：寒沧
+来源：CSDN
+原文：https://blog.csdn.net/u011669700/article/details/79323251
+版权声明：本文为博主原创文章，转载请附上博文链接！
