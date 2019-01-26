@@ -26,10 +26,10 @@ class test {
     public String trimPunct(String s) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < s.length(); ++i) {
-            char[] punct = {',', '.', '!', '?', ';', ':', '，', '。', '！', '？',
+            char punct[] = {',', '.', '!', '?', ';', ':', '，', '。', '！', '？',
                     '；', '：', '、'};
             boolean need_filter = false;
-            for(char c: punct) {
+            for(char c: punct) {           //遍历array的话，用foreach更方便
                 if (c == s.charAt(i)) {
                     need_filter = true;
                     break;
