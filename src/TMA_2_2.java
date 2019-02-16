@@ -4,3 +4,23 @@
 
 public class TMA_2_2 {
 }
+
+interface StackInterface<AnyType>
+{
+    public void push(AnyType e);
+
+    public AnyType pop();
+
+    public AnyType peek();
+
+    public boolean isEmpty();
+}
+interface QueueInterface<AnyType> {
+    boolean isEmpty();
+
+    AnyType getFront();
+
+    AnyType dequeue();
+}
+
+
