@@ -22,5 +22,8 @@ interface QueueInterface<AnyType> {
 
     AnyType dequeue();
 }
+/*/
+jjj
+ */
 
 
