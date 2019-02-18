@@ -9,7 +9,7 @@ public class Test3 {
         list.add("a");
         list.add("b");
         for(String str: list){
-            System.out.println(str);
+            System.out.print(str);
         }
         /*
         Iterator<String> it = list.iterator(); //get the iterator of list
