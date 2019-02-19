@@ -4,7 +4,7 @@
 
 import java.util.Deque;
 
-public class DoublyLinkedList<E> implements Deque<E> {
+public abstract class DoublyLinkedList<E> implements Deque<E> {
     private static class Node<E> {
         private E element;
         private Node<E> prev;
