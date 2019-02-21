@@ -13,5 +13,5 @@ Algorithm eulerTourBinary(T, p, num):
         perform the "post visit" action for position p
         count_post++
         num = Math.abs(count_pre - count_post) + 1
-        num is the number of descendants of p
+        num is the number of descendants of position p
  */
