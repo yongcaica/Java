@@ -9,11 +9,11 @@ public class ArrayStack<E> implements Stack<E> {
     private ArrayList<E> list = new ArrayList<>();
     public ArrayStack() {}
     public int size() {return list.size();}
-    public boolean isEmpty() {return list.isEmpty()}
-
+    public boolean isEmpty() {return list.isEmpty();}
+    public void push(E element) { list.add(0,element);}
+    public E top() {return list.get(0);}
+    public E pop() {return list.remove(0);}
 }
-
-
 
 /*
 methods of ArrayList:
