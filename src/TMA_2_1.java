@@ -82,6 +82,7 @@ public class TMA_2_1<T>  {
             deque.removeFront();
             deque.insertRear(455);
             deque.removeFront();
+            deque.removeRear();
         } catch (Exception e) {
             e.printStackTrace();
         }
