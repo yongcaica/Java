@@ -91,6 +91,11 @@ public class DequeDoublyLinkedList<E> implements DequeDLL<E> {
         DequeDoublyLinkedList<Integer> deque = new DequeDoublyLinkedList<>();
         deque.addLast(5);
         deque.addFirst(3);
-        System.out.println(deque);
+        deque.addFirst(7);
+        System.out.println(deque.size());
+        System.out.println(deque.isEmpty());
+        System.out.println(deque.first());
+        System.out.println((deque.removeFirst()));
+        System.out.println(deque.removeLast());
     }
 }
