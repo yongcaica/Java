@@ -1,4 +1,6 @@
 import java.util.Deque;
+import java.util.Iterator;
+import java.util.ArrayDeque;
 
 interface DequeDLL<E> {
     int size();
@@ -83,5 +85,12 @@ public class DequeDoublyLinkedList<E> implements DequeDLL<E> {
         successor.setPrev(predecessor);
         size--;
         return node.getElement();
+    }
+
+    public static void main(String args[]) {
+        DequeDoublyLinkedList<Integer> deque = new DequeDoublyLinkedList<>();
+        deque.addLast(5);
+        deque.addFirst(3);
+        System.out.println(deque);
     }
 }
