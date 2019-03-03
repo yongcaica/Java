@@ -1,10 +1,17 @@
-/*
-(20%) Using the Java programming language, implement the deque ADT with a doubly linked list.
- */
-
 import java.util.Deque;
 
-public abstract class DoublyLinkedList<E> implements Deque<E> {
+interface DequeDLL<E> {
+    int size();
+    boolean isEmpty();
+    E first();
+    E last();
+    void addFirst(E e);
+    void addLast(E e);
+    E removeFirst();
+    E removeLast();
+}
+
+public class DequeDoublyLinkedList<E> implements DequeDLL<E> {
     private static class Node<E> {
         private E element;
         private Node<E> prev;
@@ -25,7 +32,7 @@ public abstract class DoublyLinkedList<E> implements Deque<E> {
     private Node<E> trailer;
     private int size = 0;
 
-    public DoublyLinkedList() {
+    public DequeDoublyLinkedList() {
         header = new Node<>(null, null, null);
         trailer = new Node<> (null, header, null);
         header.setNext(trailer);
@@ -78,4 +85,3 @@ public abstract class DoublyLinkedList<E> implements Deque<E> {
         return node.getElement();
     }
 }
-
