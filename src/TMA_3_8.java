@@ -5,6 +5,8 @@ Draw graph G. (5%)
 Give the sequence of the vertices of G visited using the depth-first search traversal starting at vertex 1. (5%)
 Give the sequence of vertices visited using the breadth-first search traversal starting at vertex 1. (5%)
 
+
+
  */
 
 public class TMA_3_8 {
